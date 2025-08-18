@@ -13,3 +13,6 @@ They vary from math assist tools to math games.
 Source code files can be read on any text editor.
 
  TI-BASIC files can be run directly on compatible calculator or emulator.
+
+# Dependency Files
+Some programs call on dependency files to run correctly. These will be named in relevant README files.
