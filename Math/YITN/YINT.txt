@@ -1,0 +1,10 @@
+Disp "WELCOME!"
+Disp "SLOPE"
+Prompt M
+Disp "X"
+Prompt X
+Disp "Y"
+Prompt Y
+(M*X)-Y->A
+Disp ~A
+Stop

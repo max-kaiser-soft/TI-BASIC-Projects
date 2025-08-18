@@ -1,0 +1,28 @@
+ClrHome
+Disp "DEGREE 2 RADIAN"
+Disp "VERSION 1.0"
+Disp "----------------"
+Disp "WHAT DO"
+Disp "YOU HAVE?"
+Disp "1=DEGREES"
+Disp "/1=RADIANS"
+Prompt X
+ClrHome
+Disp "MEASURE?"
+Prompt theta
+ClrHome
+If (X=1)
+Then
+	theta/180->Y
+End
+If (X!=1)
+(theta/pi)*180->Y
+Disp "COMPLETE!"
+If X=1
+Then
+	Disp Y>Frac
+	Disp "* pi"
+End
+If (X!=1)
+Disp Y
+Disp "CODE BY M.KAISER"

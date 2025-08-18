@@ -1,0 +1,67 @@
+ClrHome
+randInt(1,10)->U
+randInt(1,10)->D
+randInt(1,10)->L
+randInt(1,10)->R
+randInt(1,10)->B
+randInt(1,10)->A
+Disp "FLASH"
+Disp "VERSION 1.0"
+Disp "----------------"
+Disp "PRESS ENTER..\."
+Disp " "
+Disp "----------------"
+Disp "GAME BY M.KAISER"
+Pause 
+prgmVARZERO
+ClrHome
+1->A
+10000->B
+Goto A
+Disp "RANGE?"
+Disp "LOW?"
+Prompt A
+Disp "HIGH?"
+Prompt B
+Lbl A
+Disp "THREE!"
+sin(cos(tan(sin(cos(tan(sin(cos(tan(9
+Disp "TWO!"
+sin(cos(tan(sin(cos(tan(sin(cos(tan(9
+Disp "ONE!"
+sin(cos(tan(sin(cos(tan(sin(cos(tan(9
+Lbl theta
+ClrHome
+randInt(A,B)->X
+Disp X
+sin(cos(tan(9)))
+ClrHome
+Disp "WHAT WAS IT?"
+Prompt Y
+ClrHome
+If (X=Y)
+Then
+	S+1->S
+	Goto theta
+End
+If (X!=Y)
+Then
+	Disp "WRONG!"
+	Disp "----------------"
+	Disp "YOUR ANSWER:"
+	If (Y=UUDDLRLRBABA)
+	Disp "KONAMI CODE"
+	If (Y!=UUDDLRLRBABA)
+	Disp Y
+	Disp "REAL ANSWER:"
+	Disp X
+End
+Pause 
+ClrHome
+Disp "---GAME OVER!---"
+Disp "----------------"
+Disp "SCORE:"
+Disp S
+Disp "----------------"
+Disp "CODE BY M.KAISER"
+Stop

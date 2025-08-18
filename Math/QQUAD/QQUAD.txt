@@ -1,0 +1,2 @@
+Prompt A,B,C
+Disp (~B+sqrt(B^^2-4AC))/(2A),(~B-sqrt(B^^2-4AC))/(2A)

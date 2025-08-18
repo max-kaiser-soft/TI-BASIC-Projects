@@ -1,0 +1,50 @@
+ClrHome
+Disp "FLASH 2"
+Disp "ALPHA"
+Disp "----------------"
+Disp "PRESS ENTER..\."
+prgmVARZERO
+Disp " "
+Disp "----------------"
+Disp "GAME BY M.KAISER"
+Pause 
+ClrHome
+Disp "THREE!"
+sin(cos(tan(9)))
+Disp "TWO!"
+sin(cos(tan(9)))
+Disp "ONE!"
+sin(cos(tan(9)))
+ClrHome
+~1->S
+While ((X=A) and (Y=B))
+	S+1->S
+	randInt(1,999)->X
+	randInt(1,99)->Y
+	ClrHome
+	Disp X
+	sin(cos(tan(9)))
+	ClrHome
+	sin(cos(tan(sin(cos(tan(sin(cos(tan(9)))))))))
+	ClrHome
+	Disp Y
+	sin(cos(tan(9)))
+	ClrHome
+	Disp "WHAT WERE THEY?"
+	Prompt A,B
+End
+ClrHome
+Disp "WRONG!"
+Disp "YOUR ANSWERS:"
+Disp A,B
+Disp "ANSWERS"
+Disp X,Y
+Pause 
+ClrHome
+Disp "---GAME OVER!---"
+Disp "----------------"
+Disp "SCORE:"
+Disp S
+Disp "----------------"
+Disp "CODE BY M.KAISER"
+Stop

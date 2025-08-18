@@ -1,0 +1,23 @@
+ClrHome
+Disp "SLOPE"
+Disp "VERSION 1.2"
+Disp "----------------"
+Disp "X1?"
+Prompt X
+Disp "Y1?"
+Prompt Y
+Disp "X2?"
+Prompt A
+Disp "Y2?"
+Prompt B
+Disp "WORKING"
+sin(cos(tan(9)))
+(B-Y)/(A-X)->M
+ClrHome
+Disp "COMPLETE!"
+Disp "----------------"
+Disp "ANSWER"
+Disp M
+Disp "----------------"
+Disp "CODE BY M.KAISER"
+Stop

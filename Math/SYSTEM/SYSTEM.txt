@@ -1,0 +1,90 @@
+ClrHome
+Disp "2VARIABLE SYSTEM"
+Disp "VERSION 2.7"
+Disp "----------------"
+Lbl theta
+Disp "WITH ADDITIONAL"
+Disp "CONSTANT?"
+Disp "1=YES, 2=NO"
+Input theta
+If (theta!=1) and (theta!=2)
+Then
+	prgmCHOICE
+	Goto theta
+End
+ClrHome
+Disp "----------------"
+Disp "EQUATION 1"
+Disp "----------------"
+Disp "X1?"
+Prompt X
+ClrHome
+Disp "----------------"
+Disp "EQUATION 1"
+Disp "----------------"
+Disp "Y1?"
+Prompt Y
+If (theta=1)
+Then
+	ClrHome
+	Disp "----------------"
+	Disp "EQUATION 1"
+	Disp "----------------"
+	Disp "OTHER?"
+	Prompt O
+End
+ClrHome
+Disp "----------------"
+Disp "EQUATION 1"
+Disp "----------------"
+Disp "ANSWER 1?"
+Prompt R
+ClrHome
+Disp "----------------"
+Disp "EQUATION 2"
+Disp "----------------"
+Disp "X2?"
+Prompt A
+ClrHome
+Disp "----------------"
+Disp "EQUATION 2"
+Disp "----------------"
+Disp "Y2?"
+Prompt B
+If (theta=1)
+Then
+	ClrHome
+	Disp "----------------"
+	Disp "EQUATION 2"
+	Disp "----------------"
+	Disp "OTHER?"
+	Prompt P
+End
+ClrHome
+Disp "----------------"
+Disp "EQUATION 2"
+Disp "----------------"
+Disp "ANSWER 2?"
+Prompt S
+If (theta=2)
+Then
+	0->P
+	0->O
+End
+(A/X)-(A/X)-(A/X)->D
+(Y*D)->Y
+(O*D)->O
+(R*D)->R
+(Y+B)->Y
+(O+P)->O
+(R+S)->R
+((R-O)/Y)->V
+((S-P-(B*V))/A->X
+ClrHome
+Disp "COMPLETE!"
+Disp "X AND Y="
+Disp X>Frac
+Disp V>Frac
+Disp "PROUDLY WRITTEN"
+Disp "BY M.KAISER"
+Stop

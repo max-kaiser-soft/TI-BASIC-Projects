@@ -1,0 +1,13 @@
+Disp "GENERAL FORM"
+Disp "-VERSION 2.4-"
+Disp "X?, OTHER?"
+Prompt X,U
+Disp "X, OTHER?"
+Prompt Y,V
+X*Y->A
+(X*V)+(U*Y)->B
+U*V->C
+Disp "COMPLETE!"
+Disp A,B,C
+prgmVARZERO
+Disp "CODE BY M.KAISER"

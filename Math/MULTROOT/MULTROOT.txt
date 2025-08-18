@@ -1,0 +1,9 @@
+Disp "ROOTS"
+Disp "TYPE?"
+Prompt T
+Disp "NUMBER"
+Prompt N
+(TxrootN)->C
+Disp "COMPLETE!"
+Disp C
+Disp "CODE BY M.KAISER"

@@ -1,0 +1,124 @@
+ClrHome
+Disp "FACTOR"
+Disp "VERSION 2.1"
+Disp "----------------"
+prgmVARZERO
+Disp "QUICK QUAD?"
+Disp "1=NO"
+Disp "NOT 1=YES"
+Input Q
+ClrHome
+If (Q!=1)
+Then
+	Disp "A, B, C?"
+	Prompt A,B,C
+	(B)^^2->S
+	S-4AC->I
+	(~B+sqrt(I))/(2A)->D
+	(~B-sqrt(I))/(2A)->E
+	ClrHome
+	Disp "COMPLETE!"
+	Disp "----------------"
+	Disp "ANSWERS:"
+	Disp D,E
+	Goto Q
+End
+Disp "WITH ANSWER?"
+Disp "1=NO"
+Disp "NOT 1=YES"
+Input theta
+ClrHome
+If (theta!=1)
+Then
+	Disp "A, B, C, ANSWER?"
+	Prompt A,B,C,F
+End
+If (theta=1)
+Then
+	Disp "A, B, C?"
+	Prompt A,B,C
+	0->F
+End
+ClrHome
+C-F->G
+abs(B)^^2->S
+S-4(A)(C)->I
+2A->O
+~B->N
+(N+sqrt(I))/O->D
+(N-sqrt(I))/O->E
+If (I>=0)
+1->theta
+If (I<0)
+2->theta
+ClrHome
+Lbl V
+Disp "WHAT FORM?"
+Disp "1=STANDARD"
+Disp "NOT 1=RADICAL"
+Input V
+1->T
+If (V=1) and (I<O)
+Then
+	ClrHome
+	Disp "IMAGINARY ANSWER"
+	Disp "ARE YOU SURE?"
+	Disp "1=YES"
+	Disp "NOT 1=NO"
+	Input T
+End
+If (T!=1)
+Then
+	ClrHome
+	Goto V
+End
+ClrHome
+Lbl Z
+If (V=1) and (I>=0)
+Then
+	Disp "CHECK ANSWER?"
+	Disp "1=YES"
+	Disp "NOT 1=NO"
+	Input Z
+End
+If (V=1)
+Goto S
+If (V!=1)
+Goto K
+Lbl S
+ClrHome
+If (Z!=1)
+Then
+	Disp "COMPLETE!"
+	Disp "----------------"
+	Disp "ANSWERS:"
+	Disp D,E
+End
+If (Z=1)
+Then
+	Disp "COMPLETE!"
+	Disp "----------------"
+	Disp "ANSWERS:"
+	If (((AD^^2)+(BD)+(C))=F)
+	Disp D
+	If (((AD^^2)+(BD)+(C))!=F)
+	Disp " "
+	If (((AE^^2)+(BE)+(C))=F)
+	Disp E
+	If (((AE^^2)+(BE)+(C))!=F
+	Disp " "
+End
+Goto theta
+Lbl K
+ClrHome
+Disp N
+Disp "+/-sqrt(..\.)"
+Disp I
+Disp "/"
+Disp O
+Goto theta
+Lbl theta
+Lbl Q
+
+Disp "CODE BY M.KAISER"
+Stop

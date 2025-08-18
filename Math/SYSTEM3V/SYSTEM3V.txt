@@ -1,0 +1,65 @@
+ClrHome
+Disp "3 VAR SYSTEM"
+Disp "VERSION 1.0"
+Disp "----------------"
+Disp "WITH ADDITIONAL"
+Disp "CONSTANT?"
+Disp "1=YES"
+Disp "NOT 1=NO"
+Prompt Q
+ClrHome
+Disp "EQUATION 1"
+If (Q!=1)
+Then
+	Disp "X, Y, Z, ANS?"
+	Prompt X,Y,Z,theta
+End
+If (Q=1)
+Then
+	Disp "X, Y, Z,"
+	Disp "CONSTANT, ANS?"
+	Prompt X,Y,Z,H,theta
+	theta-H->theta
+End
+ClrHome
+Disp "EQUATION 2"
+If (Q!=1)
+Then
+	Disp "X, Y, Z, ANS?"
+	Prompt U,V,W,T
+End
+If (Q=1)
+Then
+	Disp "X, Y, Z,"
+	Disp "CONSTANT, ANS?"
+	Prompt U,V,W,H,T
+	T-H->T
+End
+ClrHome
+Disp "EQUATION 3"
+If (Q!=1)
+Then
+	Disp "X, Y, Z, ANS?"
+	Prompt A,B,C,D
+End
+If (Q=1)
+Then
+	Disp "A, B, C,"
+	Disp "CONSTANT, ANS?"
+	Prompt A,B,C,H,D
+	D-H->D
+End
+ClrHome
+X(VC-WB)-Y(UC-WA)+Z(UB-VA)->S
+(theta(VC-WB)-Y(TC-WD)+Z(TB-VD))/(S)->I
+(theta(UC-WA)-X(TC-WD)+Z(TA-UD))/S->J
+~J->J
+(theta(UB-VA)-X(TB-VD)+Y(TA-UD))/S->K
+ClrHome
+Disp "COMPLETE!"
+Disp "X, Y, Z:"
+Disp I>Frac
+Disp J>Frac
+Disp K>Frac
+Disp "CODE BY M.KAISER"
+Stop

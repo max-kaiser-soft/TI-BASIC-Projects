@@ -1,0 +1,18 @@
+ClrHome
+Disp "DISTANCE"
+Disp "ALPHA"
+Disp "----------------"
+Disp "X1, Y1?"
+Prompt X,Y
+Disp "X2, Y2?"
+Prompt U,V
+sqrt(((U-X)^^2+(V-Y)^^2))->D
+ClrHome
+Disp "COMPLETE!"
+Disp "ANSWER:"
+Disp D
+Disp "OR"
+Disp "sqrt(..\.)"
+Disp (D)^^2
+Disp "CODE BY M.KAISER"
+Stop

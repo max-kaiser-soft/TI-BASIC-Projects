@@ -1,0 +1,13 @@
+ClrHome
+Disp "LOGARITHM"
+Disp "VERSION 1.1"
+Disp "BASE?"
+Prompt B
+Disp "NUMBER?"
+Prompt N
+(log(N)/log(B))->A
+ClrHome
+Disp "COMPLETE!"
+Disp A>Frac
+prgmVARZERO
+Disp "CODE BY M.KAISER"

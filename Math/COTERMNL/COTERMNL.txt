@@ -1,0 +1,14 @@
+ClrHome
+Disp "COTERMINAL"
+Disp "VERSION 1.0"
+Disp "----------------"
+Disp "ANGLE?"
+Prompt theta
+theta+360->A
+theta+360+360->B
+theta-360->C
+theta-360-360->D
+ClrHome
+Disp "-----ANGLES-----"
+Disp A,B,C,D
+Disp "CODE BY M.KAISER"

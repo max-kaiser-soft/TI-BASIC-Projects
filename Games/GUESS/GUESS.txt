@@ -1,0 +1,89 @@
+prgmVARZERO
+ClrHome
+Disp "GUESSING GAME"
+Disp "VERSION 2.0"
+Disp "----------------"
+Disp "PRESS ENTER..\."
+Disp " "
+Disp " "
+Disp "PORT BY M.KAISER"
+Pause 
+ClrHome
+Lbl H
+Menu("MENU            ","BEGIN",1,"DIRECTIONS",2,"HI-SCORES",3,"JOHN CENA",4)
+Lbl 4
+ClrHome
+Stop
+Lbl 3
+ClrHome
+prgmRECORDS
+Disp "(PRESS ENTER)"
+Pause 
+ClrHome
+Goto H
+Lbl 2
+ClrHome
+Disp "MAKE A RANGE."
+Disp "GUESS A NUMBER."
+Disp "IF TOO HIGH/LOW,"
+Disp "WILL BE WARNED."
+Disp "LOSE IF GAME"
+Disp "CRASHES."
+Disp "(PRESS ENTER)"
+Pause 
+ClrHome
+Goto H
+Lbl 1
+ClrHome
+0->V
+ClrHome
+Lbl J
+Disp "WHAT RANGE?"
+Disp "----------------"
+Disp "LOWEST POSSIBLE"
+Disp "NUMBER?"
+Input N
+ClrHome
+Disp "WHAT RANGE?"
+Disp "----------------"
+Disp "HIGHEST POSSIBLE"
+Disp "NUMBER?"
+Input O
+Lbl K
+ClrHome
+randInt(N,O)->X
+Disp "LOADING."
+sin(cos(tan(sin(cos(tan(9
+Disp "LOADING.."
+sin(cos(tan(sin(cos(tan(9
+Disp "LOADING..\."
+sin(cos(tan(sin(cos(tan(9
+ClrHome
+Lbl G
+Disp "GUESS"
+Input Y
+V+1->V
+If (X>Y)
+Then
+	Disp "TOO LOW"
+	Goto G
+End
+If (X<Y)
+Then
+	Disp "TOO HIGH"
+	Goto G
+End
+If (X=Y)
+Then
+	ClrHome
+	Disp "YOU WIN!"
+End
+Disp "GUESSES:"
+Disp V
+V-U->M
+O-N->H
+abs(H/V)->V
+Disp "SCORE:"
+Disp V
+Disp "ENTER TO REPLAY."
+Stop

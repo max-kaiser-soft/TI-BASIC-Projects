@@ -1,0 +1,44 @@
+ClrHome
+Disp "RANDOM NUMBER"
+Disp "ALPHA"
+Disp "----------------"
+Disp "PRESS ENTER..\."
+Pause 
+ClrHome
+Disp "RANGE"
+Disp "----------------"
+Disp "LOWEST?"
+Prompt X
+ClrHome
+Disp "RANGE"
+Disp "----------------"
+Disp "HIGHEST?"
+Prompt Y
+ClrHome
+Disp "HOW MANY?"
+Prompt theta
+0->I
+While ((I!=1) and (I!=2))
+	ClrHome
+	Disp "WITH AVERAGE?"
+	Disp "1=YES"
+	Disp "2=NO"
+	Prompt I
+End
+ClrHome
+0->A
+0->S
+While (A!=theta)
+	randInt(X,Y)->J
+	Disp J
+	J+S->S
+	sin(cos(tan(sin(cos(tan(sin(cos(tan(sin(cos(tan(sin(cos(tan(sin(cos(tan(9
+	A+1->A
+End
+sin(cos(tan(sin(cos(tan(sin(cos(tan(sin(cos(tan(sin(cos(tan(sin(cos(tan(9
+If (I=1)
+Then
+	Disp "AVERAGE:"
+	Disp (S/theta)
+End
+Disp "CODE BY M.KAISER"

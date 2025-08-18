@@ -1,0 +1,26 @@
+ClrHome
+Disp "GEN FRM 3TERM"
+Disp "-VERSION 1.4-"
+Disp " "
+Disp "PART 1"
+Disp "X^^2?, X?, OTHER?"
+Prompt X,U,A
+Disp "PART 2"
+Disp "X^^2?, X?, OTHER?"
+Prompt Y,V,B
+XY->I
+XV->J
+XB->K
+UY->L
+UV->M
+UB->N
+AY->O
+AV->P
+AB->Q
+J+L->Z
+K+M+O->theta
+N+P->W
+Disp "COMPLETE!"
+Disp "ANSWERS:"
+Disp I,Z,theta,W,Q
+prgmVARZERO

@@ -1,0 +1,15 @@
+ClrHome
+Disp "MIDPOINT"
+Disp "ALPHA"
+Disp "----------------"
+Disp "X1, Y1?"
+Prompt X,Y
+Disp "X2, Y2?"
+Prompt U,V
+Disp "COMPLETE!"
+Disp "ANSWERS:"
+Disp ((U+X)/2)
+Disp ","
+Disp ((V+Y)/2)
+Disp "CODE BY M.KAISER"
+Stop

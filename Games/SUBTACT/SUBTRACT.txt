@@ -1,0 +1,28 @@
+ClrHome
+Disp "SUBTRACT"
+Disp "ALPHA"
+Disp "----------------"
+Disp "PRESS ENTER..\."
+Pause 
+ClrHome
+100->X
+While (X>0)
+	Disp X
+	sin(cos(tan(sin(cos(tan(sin(cos(tan(sin(cos(tan(cos(sin(tan(cos(sin(tan(cos(9
+	ClrHome
+	Disp "-"
+	randInt(1,9)->Y
+	Disp Y
+	X-Y->Z
+	Prompt A
+	If (A!=Z)
+	Then
+		ClrHome
+		Disp "WRONG!"
+		Goto K
+	End
+	Z->X
+	
+End
+Lbl K
+Disp "PORT BY M.KAISER"

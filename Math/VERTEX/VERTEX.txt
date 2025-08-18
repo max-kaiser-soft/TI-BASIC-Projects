@@ -1,0 +1,6 @@
+Disp "VERTEX"
+Disp "A, B, C"
+Prompt A,B,C
+((~B)/(2A))->D
+((C)-((B^^2)/(4A)))->E
+Disp D,E

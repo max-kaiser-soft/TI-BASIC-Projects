@@ -1,0 +1,16 @@
+ClrHome
+Disp "PERCENT DIFF"
+Disp "VERSION 1.0"
+Disp "----------------"
+Disp "EXPERIMENTAL?"
+Prompt E
+Disp "CALCULATED?"
+Prompt C
+((E-C)/(.5(E+C)))*100->A
+ClrHome
+Disp "COMPLETE!"
+Disp "----------------"
+Disp "ANSWER:"
+Disp A
+Disp " "
+Disp "CODE BY M.KAISER"

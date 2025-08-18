@@ -1,0 +1,26 @@
+ClrHome
+Disp "PERCENT ERROR"
+Disp "VERSION 1.2"
+Disp "----------------"
+Disp "WITH ABSOLUTE?"
+Disp "1=YES"
+Disp "NOT 1=NO"
+Input theta
+ClrHome
+Disp "EX. VALUE?"
+Prompt E
+Disp "ACC. VALUE?"
+Prompt Aa
+If (theta=1)
+abs(E-A)->S
+If (theta!=1)
+E-A->S
+S/A->S
+S*100->P
+ClrHome
+Disp "COMPLETE!"
+Disp "----------------"
+Disp "ANSWER:"
+Disp P
+Disp "         PERCENT"
+Disp "CODE BY M.KAISER"
