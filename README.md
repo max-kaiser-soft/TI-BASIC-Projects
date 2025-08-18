@@ -15,7 +15,7 @@ Skill level in the langauge changes over time, but no exact dates of writing are
 # Reading and Execution
 Source code files can be read on any text editor.
 
-Source code obtained from original files using [Cemetech](https://www.cemetech.net/)
+Source code obtained from original files using [Cemetech](https://www.cemetech.net/).
 
 TI-BASIC files can be run directly on compatible calculator or emulator.
 
