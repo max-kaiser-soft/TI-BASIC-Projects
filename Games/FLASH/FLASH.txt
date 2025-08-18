@@ -64,4 +64,5 @@ Disp "SCORE:"
 Disp S
 Disp "----------------"
 Disp "CODE BY M.KAISER"
+
 Stop
