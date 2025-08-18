@@ -8,3 +8,8 @@ They vary from math assist tools to math games.
 `.8xp` TI-BASIC Files
 
 `.txt` Source code readable on computers
+
+# Reading and Execution
+Source code files can be read on any text editor.
+
+ TI-BASIC files can be run directly on compatible calculator or emulator.
