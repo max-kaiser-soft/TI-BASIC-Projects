@@ -2,7 +2,9 @@
 Collection of old TI-BASIC 83 programs
 
 These projects were written between 2013 and 2016.
+
 They vary from math assist tools to math games.
+
 Skill level in the langauge changes over time, but no exact dates of writing are saved.
 
 # File Formats
