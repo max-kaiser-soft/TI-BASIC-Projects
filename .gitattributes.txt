@@ -1,0 +1,3 @@
+*.txt linguist-language=TI-BASIC
+*.8xp linguist-language=TI-BASIC
+*.md linguist-documentation=false
