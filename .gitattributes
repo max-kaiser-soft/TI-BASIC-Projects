@@ -1,3 +1,13 @@
 *.txt linguist-language=TI-BASIC
+
 *.8xp linguist-language=TI-BASIC
+*.8xp binary
+
 *.md linguist-documentation=false
+
+*.txt text eol=lf
+
+*.env export-ignore
+*.key export-ignore
+
+* linguist-detectable=true
