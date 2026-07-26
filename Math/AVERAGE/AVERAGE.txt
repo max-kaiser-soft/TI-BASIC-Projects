@@ -1,0 +1,41 @@
+ClrHome
+Disp "AVERAGE"
+Disp "VERSION 1.0"
+Disp "----------------"
+0->X
+0->Y
+0->E
+Lbl X
+If (E=1)
+Then
+	ClrHome
+	Disp "AVERAGE"
+	Disp "VERSION 1.0"
+	Disp "----------------"
+	Disp "INVALID CHOICE"
+End
+Disp "HOW"
+Disp "MANY NUMBERS?"
+Prompt theta
+If (1>theta)
+Then
+	1->E
+	Goto X
+End
+
+ClrHome
+While (Y!=theta)
+	ClrHome
+	Disp "VALUE?"
+	Prompt U
+	X+U->X
+	Y+1->Y
+End
+X/theta->A
+ClrHome
+Disp "COMPLETE!"
+Disp "----------------"
+Disp "AVERAGE:"
+Disp A
+Disp " "
+Disp "CODE BY M.KAISER"
