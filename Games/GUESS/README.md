@@ -1,8 +1,10 @@
 # GUESS
 GUESS is a number guessing game.
 
-This is a game that chooses a random number within a player inputted range and prompts the player to guess.
+This is a game that has players guess a random number within the range of their choice.
 
 
 # Required Dependencies
 VARZERO
+
+RECORDS
